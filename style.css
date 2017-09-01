@@ -118,8 +118,9 @@ div#features div.options {
 div#features div.options div.reasons {
 	display: flex;
 	flex-direction: column;
-	/*width: 35%;*/
+	align-items: center;
 	margin: 0 3%;
+	position: relative;
 }
 
 div#features div.options div.reasons:hover {
@@ -128,7 +129,7 @@ div#features div.options div.reasons:hover {
 	background-color: #F7FFFF;								/*very light blue*/
 }
 
-div#features div.options div.reasons:hover span.fa {									/*remember hover target option*/
+div#features div.options div.reasons:hover span.fa {									/*remember this hover-target option*/
 	color: skyblue;	
 	transition: none;
 	transform: none;													
@@ -145,8 +146,7 @@ div#features div.options div.reasons span {
 	color: lightgrey;
 	text-align: center;
 	position: absolute;
-	margin-top: 70px;
-	margin-left: 9%;
+	top: 25%;
 }
 
 
@@ -553,6 +553,10 @@ footer div.cont-links div.pair div.links {
 	color: white;
 }
 
+footer div.cont-links div.pair div.links li {
+	list-style: none;
+}
+
 footer div.cont-links div.pair div.links a{
 	text-decoration: none;
 }
@@ -576,23 +580,24 @@ footer div.soc-icons {
 	padding-top: 50px;
 }
 
-footer div.soc-icons a {
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
+footer div.soc-icon {
+	/*display: flex;
+	justify-content: center;*/
 	flex-grow: 1;
 }
 
-footer div.soc-icons a span{
-	/*display: flex;
-	justify-content: center;*/
+footer div.soc-icons div.soc-icon a {
+	text-decoration: none;
+}
+
+footer div.soc-icons div.soc-icon a span{
+	
 	margin: 0 5%;
-	/*flex-grow: 1;*/
 	font-size: 40px;
 	color: #01ac4c;
 }
 
-footer div.soc-icons a span:hover {
+footer div.soc-icons div.soc-icon a span:hover {
 	color: white;
 	transition: .5s;
 }
@@ -643,11 +648,11 @@ footer div.soc-icons a span:hover {
 
 	div.quote {
 		width: 80%;
-		margin: 0 10% 50px;
+		margin: 0 10%;
 	}
 
 	div.quote h4, h6 {
-		margin: 40px 60px; 
+		margin: 40px 30px; 
 	}
 
 	section#more div div.holder div.single-option {
@@ -694,17 +699,13 @@ footer div.soc-icons a span:hover {
 		margin: 0;
 	}
 
-	/*span.fa {
-		display: none;
-	}*/
-
 	div.quote {
-		width: 80%;
-		margin: 0 5% 50px;
+		width: 90%;
+		margin: 0 5%;
 	}
 
 	div.quote h4, h6 {
-		margin: 40px 40px; 
+		margin: 40px 10px; 
 	}
 
 	div#features div.options {
